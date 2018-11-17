@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel=stylesheet href="login.css" />
+<title>Log in</title>
+<meta charset="UTF-8">
+<body style="background-color:#9999ff;">
+</head>
+
+<body>
+<div style="background-color:white">
+<h1 style="color:darkblue"><u>Login</u></h1>
+
+<fieldset>
+<class="login">
+    <div id="login">
+
+    <form id="loginform" action="create.php" method="post">
+    <p>
+        <label for="username">
+        Username *
+        <br>
+        <input type="text" name="username" id="username"/><span class="error"><?php echo $errormsg; ?></span>
+        </label>
+    </p>
+
+    <p>
+        <label for="password">
+        Password *
+        <br>
+        <input type="password" name="password" id="password"/><span class="error"><?php echo $errormsg; ?></span>
+        </label>
+    </p>
+
+    <input type="submit" id="submit" value="Enter"/>
+<p>Don't have an account?</p>
+<a href="sign_in.html">Register</a>
+    </form>
+    </div>
+    </fieldset>
+    <footer id="demo" onclick="myFunction()"><center>Copyright &copy; www.MeNow.com, Louis Marlio-Marette</center></footer>
+
+
+<script>
+function myFunction() {
+    document.getElementById("demo").style.color = "darkred";
+}
+</script>
+</body>
+</html>
